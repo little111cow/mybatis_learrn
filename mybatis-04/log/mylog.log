@@ -1,0 +1,58 @@
+2021-11-21 17:08:54,351 DEBUG [cn.app.dao.UserMapper.getuserById] - ==>  Preparing: select * from user where id = ?;
+2021-11-21 17:08:54,411 DEBUG [cn.app.dao.UserMapper.getuserById] - ==> Parameters: 1(Integer)
+2021-11-21 17:08:54,461 DEBUG [cn.app.dao.UserMapper.getuserById] - <==      Total: 1
+2021-11-21 17:15:51,644 DEBUG [cn.app.dao.UserMapper.getUserList] - ==>  Preparing: select * from user limit ?,?;
+2021-11-21 17:15:51,694 DEBUG [cn.app.dao.UserMapper.getUserList] - ==> Parameters: 0(Integer), 2(Integer)
+2021-11-21 17:15:51,744 DEBUG [cn.app.dao.UserMapper.getUserList] - <==      Total: 2
+2021-11-21 17:16:15,118 DEBUG [cn.app.dao.UserMapper.getUserList] - ==>  Preparing: select * from user limit ?,?;
+2021-11-21 17:16:15,198 DEBUG [cn.app.dao.UserMapper.getUserList] - ==> Parameters: 2(Integer), 2(Integer)
+2021-11-21 17:16:15,258 DEBUG [cn.app.dao.UserMapper.getUserList] - <==      Total: 2
+2021-11-21 17:29:31,551 DEBUG [cn.app.dao.UserMapper.getUserListByRowBounds] - ==>  Preparing: select * from user;
+2021-11-21 17:29:31,637 DEBUG [cn.app.dao.UserMapper.getUserListByRowBounds] - ==> Parameters: 
+2021-11-21 17:33:37,747 DEBUG [cn.app.dao.UserMapper.addUser] - ==>  Preparing: insert into user(id,name,pwd) values(?,?,?);
+2021-11-21 17:33:37,827 DEBUG [cn.app.dao.UserMapper.addUser] - ==> Parameters: 10(Integer), lladl(String), 123442(String)
+2021-11-21 17:33:37,847 DEBUG [cn.app.dao.UserMapper.addUser] - <==    Updates: 1
+2021-11-21 17:34:14,100 DEBUG [cn.app.dao.UserMapper.getUserListByRowBounds] - ==>  Preparing: select * from user;
+2021-11-21 17:34:14,172 DEBUG [cn.app.dao.UserMapper.getUserListByRowBounds] - ==> Parameters: 
+2021-11-21 17:34:26,999 DEBUG [cn.app.dao.UserMapper.addUser] - ==>  Preparing: insert into user(id,name,pwd) values(?,?,?);
+2021-11-21 17:34:27,065 DEBUG [cn.app.dao.UserMapper.addUser] - ==> Parameters: 10(Integer), lladl(String), 123442(String)
+2021-11-21 17:34:27,072 DEBUG [cn.app.dao.UserMapper.addUser] - <==    Updates: 1
+2021-11-21 17:34:57,756 DEBUG [cn.app.dao.UserMapper.addUser] - ==>  Preparing: insert into user(id,name,pwd) values(?,?,?);
+2021-11-21 17:34:57,806 DEBUG [cn.app.dao.UserMapper.addUser] - ==> Parameters: 10(Integer), lladl(String), 123442(String)
+2021-11-21 17:34:57,816 DEBUG [cn.app.dao.UserMapper.addUser] - <==    Updates: 1
+2021-11-21 17:37:30,761 DEBUG [cn.app.dao.UserMapper.delUser] - ==>  Preparing: delete from user where id=?
+2021-11-21 17:37:30,831 DEBUG [cn.app.dao.UserMapper.delUser] - ==> Parameters: 10(Integer)
+2021-11-21 17:37:30,841 DEBUG [cn.app.dao.UserMapper.delUser] - <==    Updates: 1
+2021-11-21 17:41:20,005 DEBUG [cn.app.dao.UserMapper.addUser] - ==>  Preparing: insert into user(id,name,pwd) values(?,?,?);
+2021-11-21 17:41:20,085 DEBUG [cn.app.dao.UserMapper.addUser] - ==> Parameters: 10(Integer), lladl(String), 123442(String)
+2021-11-21 17:41:20,085 DEBUG [cn.app.dao.UserMapper.addUser] - <==    Updates: 1
+2021-11-21 17:41:33,571 DEBUG [cn.app.dao.UserMapper.updateUser] - ==>  Preparing: update user set name=?,pwd=? where id = ?
+2021-11-21 17:41:33,643 DEBUG [cn.app.dao.UserMapper.updateUser] - ==> Parameters: dal(String), 123(String), 10(Integer)
+2021-11-21 17:41:33,653 DEBUG [cn.app.dao.UserMapper.updateUser] - <==    Updates: 1
+2021-11-21 17:48:04,963 DEBUG [cn.app.TestMapper] - 测试更新用户方法
+2021-11-21 17:48:05,923 DEBUG [cn.app.dao.UserMapper.updateUser] - ==>  Preparing: update user set name=?,pwd=? where id = ?
+2021-11-21 17:48:06,015 DEBUG [cn.app.dao.UserMapper.updateUser] - ==> Parameters: dal(String), 123(String), 10(Integer)
+2021-11-21 17:48:06,015 DEBUG [cn.app.dao.UserMapper.updateUser] - <==    Updates: 1
+2021-11-21 17:51:50,026 INFO [cn.app.TestMapper] - 测试通过id查询用户
+2021-11-21 17:51:50,963 DEBUG [cn.app.dao.UserMapper.getuserById] - ==>  Preparing: select * from user where id = ?;
+2021-11-21 17:51:51,044 DEBUG [cn.app.dao.UserMapper.getuserById] - ==> Parameters: 1(Integer)
+2021-11-21 17:51:51,078 DEBUG [cn.app.dao.UserMapper.getuserById] - <==      Total: 1
+2021-11-21 17:51:57,648 DEBUG [cn.app.TestMapper] - 测试limit分页
+2021-11-21 17:51:58,515 DEBUG [cn.app.dao.UserMapper.getUserListByLimit] - ==>  Preparing: select * from user limit ?,?;
+2021-11-21 17:51:58,581 DEBUG [cn.app.dao.UserMapper.getUserListByLimit] - ==> Parameters: 2(Integer), 2(Integer)
+2021-11-21 17:51:58,621 DEBUG [cn.app.dao.UserMapper.getUserListByLimit] - <==      Total: 2
+2021-11-21 17:52:05,235 INFO [cn.app.TestMapper] - 测试rowbounds分页
+2021-11-21 17:52:06,181 DEBUG [cn.app.dao.UserMapper.getUserListByRowBounds] - ==>  Preparing: select * from user;
+2021-11-21 17:52:06,281 DEBUG [cn.app.dao.UserMapper.getUserListByRowBounds] - ==> Parameters: 
+2021-11-21 17:52:15,622 INFO [cn.app.TestMapper] - 测试删除用户
+2021-11-21 17:52:16,418 DEBUG [cn.app.dao.UserMapper.delUser] - ==>  Preparing: delete from user where id=?
+2021-11-21 17:52:16,497 DEBUG [cn.app.dao.UserMapper.delUser] - ==> Parameters: 10(Integer)
+2021-11-21 17:52:16,500 DEBUG [cn.app.dao.UserMapper.delUser] - <==    Updates: 1
+2021-11-21 17:52:23,757 INFO [cn.app.TestMapper] - 测试添加用户方法
+2021-11-21 17:52:24,609 DEBUG [cn.app.dao.UserMapper.addUser] - ==>  Preparing: insert into user(id,name,pwd) values(?,?,?);
+2021-11-21 17:52:24,671 DEBUG [cn.app.dao.UserMapper.addUser] - ==> Parameters: 10(Integer), lladl(String), 123442(String)
+2021-11-21 17:52:24,681 DEBUG [cn.app.dao.UserMapper.addUser] - <==    Updates: 1
+2021-11-21 17:52:38,729 DEBUG [cn.app.dao.UserMapper.updateUser] - ==> Parameters: dal(String), 123(String), 10(Integer)
+2021-11-21 17:52:39,604 DEBUG [cn.app.TestMapper] - 测试更新用户方法
+                           2021-11-21 17:52:39,541 DEBUG [cn.app.dao.UserMapper.updateUser] - ==>  Preparing: update user set name=?,pwd=? where id = ?
+                           2021-11-21 17:52:39,604 DEBUG [cn.app.dao.UserMapper.updateUser] - <==    Updates: 1

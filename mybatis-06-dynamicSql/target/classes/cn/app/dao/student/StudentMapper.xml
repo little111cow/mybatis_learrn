@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间用全限定名空间-->
+<mapper namespace="cn.app.dao.student.StudentMapper">
+    <select id="getStudentByCondition" resultType="student" parameterType="map">
+        select * from student
+        <where>
+            <if test="name != null">
+                and `name` like #{name}
+            </if>
+            <if test="tid != null">
+                and tid=#{tid}
+            </if>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+        </where>
+    </select>
+
+    <update id="updateStudentById" parameterType="map">
+        update student
+        <set>
+            <if test="pwd != null">pwd = #{pwd},</if>
+            <if test="name != null">`name` = #{name},</if>
+            <if test="tid != null">tid = #{tid},</if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="getStudentByIds" resultType="student">
+        select * from student
+        <where>
+            id in
+            <foreach collection="list" index="index" item="item" open=" (" separator="," close=")" >
+                #{item}
+            </foreach>
+        </where>
+    </select>
+
+    <select id="getStudentByChooseWhen" resultType="student">
+        select * from student
+        <where>
+            <choose>
+                <when test="id != null">
+                      id = #{id}
+                </when>
+                <when test="likeName != null">
+                     `name` like #{likeName}
+                </when>
+                <otherwise>
+                     1=1
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+</mapper>

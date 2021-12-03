@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../mybatis_learn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mybatis_learn/mybatis-01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mybatis_learn/mybatis-02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mybatis_learn/mybatis-03-resultMap" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mybatis_learn/mybatis-04" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mybatis_learn/mybatis-05" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../mybatis_learn/mybatis-06-dynamicSql" charset="UTF-8" />
+  </component>
+</project>

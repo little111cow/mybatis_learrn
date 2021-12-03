@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间用全限定名空间-->
+<mapper namespace="cn.app.dao.student.StudentMapper">
+
+    <!--&lt;!&ndash;关联方法一：通过子查询关联&ndash;&gt;-->
+    <!--<resultMap id="studentMap" type="student">-->
+        <!--<result property="id" column="id"/>-->
+        <!--<result column="name" property="name"/>-->
+        <!--<result property="pwd" column="pwd"/>-->
+        <!--&lt;!&ndash;关联属性teacher通过子查询getTeacherById查出来，将column列tid作为子查询的参数-->
+        <!--property对应实体类的属性-->
+        <!--column为表字段 j-->
+        <!--avaType对应属性的引用类型-->
+        <!--select对应子查询的id-->
+        <!--常用属性还有resultMap-->
+        <!--当属性存在字段和属性不一致时使用rusultMap不使用javaType-->
+        <!--这里只是简单的关联，还可以进一步关联，即关联中嵌套关联-->
+        <!--&ndash;&gt;-->
+        <!--<association property="teacher" column="tid" javaType="teacher" select="getTeacherById"/>-->
+    <!--</resultMap>-->
+
+    <!--<select id="getTeacherById" resultType="teacher" parameterType="_int">-->
+        <!--select * from teacher where id = #{tid};-->
+    <!--</select>-->
+    <!--<select id="getStudentById" parameterType="_int" resultMap="studentMap">-->
+        <!--select * from student where id=#{sid};-->
+    <!--</select>-->
+
+    <!--关联方法二：使用结果集关联,推荐使用-->
+    <select id="getStudentById" parameterType="_int" resultMap="studentMap">
+        select
+        s.id as sid,
+        s.name as sname,
+        s.pwd,
+        s.tid,
+        t.id,
+        t.name as tname
+        from student s,teacher t
+        where s.tid=t.id and s.id=#{sid};
+    </select>
+
+    <resultMap id="studentMap" type="student">
+        <result property="id" column="sid"/>
+        <result property="name" column="sname"/>
+        <result property="pwd" column="pwd"/>
+        <!--注意：如果使用javaType则直接在association中间定义映射-->
+        <!--<association property="teacher" column="tid" javaType="teacher">-->
+            <!--<result property="id" column="id"/>-->
+            <!--<result property="name" column="tname"/>-->
+        <!--</association>-->
+
+        <!--如果用resultMap则在外面重新定义Map，两种方法均可-->
+        <association property="teacher" column="tid" resultMap="teacherMap"/>
+    </resultMap>
+
+    <resultMap id="teacherMap" type="teacher">
+        <result property="id" column="id"/>
+        <result property="name" column="tname"/>
+    </resultMap>
+
+
+</mapper>

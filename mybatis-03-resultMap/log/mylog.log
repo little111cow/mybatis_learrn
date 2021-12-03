@@ -1,0 +1,18 @@
+2021-11-19 17:24:31,779 INFO [cn.app.dao.TestUserMapper] - 进入了test方法
+2021-11-19 17:24:31,780 DEBUG [cn.app.dao.TestUserMapper] - debug进入了test方法
+2021-11-19 17:24:31,781 ERROR [cn.app.dao.TestUserMapper] - test方法内部发生错误
+2021-11-19 17:24:32,860 DEBUG [cn.app.dao.UserMapper.getuserById] - ==>  Preparing: select * from user where id=?;
+2021-11-19 17:24:32,975 DEBUG [cn.app.dao.UserMapper.getuserById] - ==> Parameters: 1(Integer)
+2021-11-19 17:24:33,027 DEBUG [cn.app.dao.UserMapper.getuserById] - <==      Total: 1
+2021-11-19 17:27:18,037 INFO [cn.app.dao.TestUserMapper] - 进入了test方法
+2021-11-19 17:27:18,038 DEBUG [cn.app.dao.TestUserMapper] - debug进入了test方法
+2021-11-19 17:27:18,038 ERROR [cn.app.dao.TestUserMapper] - test方法内部发生错误
+2021-11-19 17:27:19,037 DEBUG [cn.app.dao.UserMapper.getuserById] - ==>  Preparing: select * from user where id=?;
+2021-11-19 17:27:19,125 DEBUG [cn.app.dao.UserMapper.getuserById] - ==> Parameters: 1(Integer)
+2021-11-19 17:27:19,182 DEBUG [cn.app.dao.UserMapper.getuserById] - <==      Total: 1
+2021-11-19 17:31:23,903 INFO [cn.app.dao.TestUserMapper] - 进入了test方法
+2021-11-19 17:31:23,904 DEBUG [cn.app.dao.TestUserMapper] - debug进入了test方法
+2021-11-19 17:31:23,905 ERROR [cn.app.dao.TestUserMapper] - test方法内部发生错误
+2021-11-19 17:31:24,872 DEBUG [cn.app.dao.UserMapper.getuserById] - ==>  Preparing: select * from user where id=?;
+2021-11-19 17:31:24,942 DEBUG [cn.app.dao.UserMapper.getuserById] - ==> Parameters: 1(Integer)
+2021-11-19 17:31:24,996 DEBUG [cn.app.dao.UserMapper.getuserById] - <==      Total: 1

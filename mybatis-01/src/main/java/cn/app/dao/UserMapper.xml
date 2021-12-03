@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间用全限定名空间-->
+<mapper namespace="cn.app.dao.UserMapper">
+    <!--id对应接口中的方法，resultType对应返回值类型，parameterType对应参数类型-->
+    <select id="getUserList" resultType="cn.app.entity.User">
+        select * from user;
+    </select>
+
+    <select id="getUserLike" parameterType="Map" resultType="cn.app.entity.User">
+        select * from user where `name` like #{name};
+    </select>
+
+    <insert id="addUser" parameterType="cn.app.entity.User">
+        insert into user(id,name,pwd) VALUES (#{id},#{name},#{pwd});
+    </insert>
+
+    <delete id="delUser" parameterType="int">
+        delete from user where id=#{id};
+    </delete>
+
+    <update id="updateUser" parameterType="map">
+        update user set name=#{name},pwd=#{pwd} where id=#{id};
+    </update>
+</mapper>

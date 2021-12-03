@@ -1,0 +1,112 @@
+2021-11-24 20:26:24,377 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id,s.name,s.pwd,t.name as teacherName from student as s, teacher as t where s.tid=t.id and s.id=?;
+2021-11-24 20:26:24,501 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:29:46,601 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id,s.name,s.pwd,t.name as teacherName from student as s, teacher as t where s.tid=t.id and s.id=?;
+2021-11-24 20:29:46,693 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:33:33,481 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id,s.name,s.pwd,t.name as teacherName from student as s, teacher as t where s.tid=t.id and s.id=?;
+2021-11-24 20:33:33,553 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:41:22,596 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id,s.name,s.pwd,t.name as teacherName from student as s, teacher as t where s.tid=t.id and s.id=?;
+2021-11-24 20:41:22,664 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:41:22,716 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:43:21,925 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id,s.name,s.pwd,t.name as teacherName from student as s, teacher as t where s.tid=t.id and s.id=?;
+2021-11-24 20:43:21,995 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:43:22,056 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:50:46,362 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id,s.name,s.pwd,t.name as teacherName from student as s, teacher as t where s.tid=t.id and s.id=?;
+2021-11-24 20:50:46,473 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:50:46,527 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:51:49,539 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select * from student where id=?;
+2021-11-24 20:51:49,620 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:51:49,665 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:51:58,502 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select * from student where id=?;
+2021-11-24 20:51:58,583 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:51:58,686 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:53:00,879 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select * from student where id=?;
+2021-11-24 20:53:00,952 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:53:01,015 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:54:26,744 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select * from student where id=?;
+2021-11-24 20:54:26,826 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:54:26,878 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:58:17,242 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select * from student where id=?;
+2021-11-24 20:58:17,330 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:58:17,515 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:58:17,516 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - ==>  Preparing: select * from teacher where id = ?;
+2021-11-24 20:58:17,516 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - ==> Parameters: 2(Integer)
+2021-11-24 20:58:17,522 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - <==      Total: 1
+2021-11-24 20:59:20,095 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select * from student where id=?;
+2021-11-24 20:59:20,184 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 20:59:20,396 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 20:59:20,397 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - ==>  Preparing: select * from teacher where id = ?;
+2021-11-24 20:59:20,398 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - ==> Parameters: 2(Integer)
+2021-11-24 20:59:20,406 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - <==      Total: 1
+2021-11-24 21:27:39,711 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select * from student where id=?;
+2021-11-24 21:27:39,770 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 21:27:39,888 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 21:27:39,889 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - ==>  Preparing: select * from teacher where id = ?;
+2021-11-24 21:27:39,890 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - ==> Parameters: 2(Integer)
+2021-11-24 21:27:39,902 DEBUG [cn.app.dao.student.StudentMapper.getTeacherById] - <==      Total: 1
+2021-11-24 21:31:24,775 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id as sid,s.name as sname,s.pwd,t.name as tname from student s,teacher t where s.tid=t.id and s.id=?;
+2021-11-24 21:31:24,850 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 21:31:24,897 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 21:33:52,560 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id as sid,s.name as sname,s.pwd,t.name as tname from student s,teacher t where s.tid=t.id and s.id=?;
+2021-11-24 21:33:52,642 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 21:33:52,688 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 21:41:47,986 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id as sid,s.name as sname,s.pwd,s.tid,t.id,t.name as tname from student s,teacher t where s.tid=t.id and s.id=?;
+2021-11-24 21:41:48,073 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 21:43:13,647 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id as sid,s.name as sname,s.pwd,s.tid,t.id,t.name as tname from student s,teacher t where s.tid=t.id and s.id=?;
+2021-11-24 21:43:13,728 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 21:44:01,394 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id as sid,s.name as sname,s.pwd,s.tid,t.id,t.name as tname from student s,teacher t where s.tid=t.id and s.id=?;
+2021-11-24 21:44:01,478 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 21:44:01,524 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 21:48:37,137 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id as sid,s.name as sname,s.pwd,s.tid,t.id,t.name as tname from student s,teacher t where s.tid=t.id and s.id=?;
+2021-11-24 21:48:37,228 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-24 21:48:37,272 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1
+2021-11-24 22:09:39,663 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-24 22:09:39,732 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-24 22:10:10,245 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-24 22:10:10,329 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-24 22:10:10,375 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 2
+2021-11-24 22:16:42,195 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, s.pwd, s.id as sid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-24 22:16:42,329 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-24 22:19:03,342 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, s.pwd, s.id as sid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-24 22:19:03,464 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-24 22:19:03,514 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 2
+2021-11-24 22:37:45,138 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, s.pwd, s.id as sid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-24 22:37:45,230 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-24 22:37:45,282 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 2
+2021-11-24 22:41:06,792 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, s.pwd, s.id as sid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-24 22:41:06,869 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-26 17:06:56,055 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, s.pwd, s.id as sid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-26 17:06:56,623 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-26 17:08:38,106 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, s.pwd, s.id as sid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-26 17:08:38,181 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-26 17:09:59,916 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, s.pwd, s.id as sid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-26 17:10:00,007 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-26 17:20:15,026 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select t.id, t.name as tname, s.name as sname, s.tid, s.pwd, s.id as sid from teacher t,student s where t.id=s.tid and t.id=?
+2021-11-26 17:20:15,128 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-26 17:20:15,187 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 2
+2021-11-26 17:32:12,836 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select * from teacher;
+2021-11-26 17:32:12,890 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 
+2021-11-26 17:32:13,050 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 3
+2021-11-26 17:36:15,325 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select * from teacher;
+2021-11-26 17:36:15,410 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 
+2021-11-26 17:36:15,562 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 3
+2021-11-26 17:37:03,735 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select * from teacher;
+2021-11-26 17:37:03,805 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 
+2021-11-26 17:37:03,970 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 3
+2021-11-26 17:42:30,658 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select * from teacher;
+2021-11-26 17:42:30,746 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 
+2021-11-26 17:42:30,904 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 3
+2021-11-26 17:44:30,492 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select * from teacher where id = ?;
+2021-11-26 17:44:30,562 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-26 17:44:30,692 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 1
+2021-11-26 17:44:30,702 DEBUG [cn.app.dao.teacher.TeacherMapper.getstudentsbyid] - ==>  Preparing: select * from student where tid = ?;
+2021-11-26 17:44:30,702 DEBUG [cn.app.dao.teacher.TeacherMapper.getstudentsbyid] - ==> Parameters: 1(Integer)
+2021-11-26 17:44:30,702 DEBUG [cn.app.dao.teacher.TeacherMapper.getstudentsbyid] - <==      Total: 2
+2021-11-26 17:48:43,080 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==>  Preparing: select * from teacher where id = ?;
+2021-11-26 17:48:43,150 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - ==> Parameters: 1(Integer)
+2021-11-26 17:48:43,270 DEBUG [cn.app.dao.teacher.TeacherMapper.getTeacherById] - <==      Total: 1
+2021-11-26 17:48:43,270 DEBUG [cn.app.dao.teacher.TeacherMapper.getstudentsbyid] - ==>  Preparing: select * from student where tid = ?;
+2021-11-26 17:48:43,270 DEBUG [cn.app.dao.teacher.TeacherMapper.getstudentsbyid] - ==> Parameters: 1(Integer)
+2021-11-26 17:48:43,270 DEBUG [cn.app.dao.teacher.TeacherMapper.getstudentsbyid] - <==      Total: 2
+2021-11-26 17:48:43,280 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==>  Preparing: select s.id as sid, s.name as sname, s.pwd, s.tid, t.id, t.name as tname from student s,teacher t where s.tid=t.id and s.id=?;
+2021-11-26 17:48:43,280 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - ==> Parameters: 1(Integer)
+2021-11-26 17:48:43,280 DEBUG [cn.app.dao.student.StudentMapper.getStudentById] - <==      Total: 1

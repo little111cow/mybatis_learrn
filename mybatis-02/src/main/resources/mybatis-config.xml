@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--通过外部配置文件读取数据库配置信息-->
+    <properties resource="db.properties">
+        <!--此处还可以再添加一些配置属性，优先使用外部文件的配置-->
+        <!--<property name="username" value="root"/>-->
+    </properties>
+
+    <!--一些常用的设置属性：https://mybatis.org/mybatis-3/zh/configuration.html#settings-->
+    <settings>
+        <!--允许缓存-->
+        <setting name="cacheEnabled" value="ture"/>
+        <!--开启懒加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--开启驼峰命名转换-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--使用LOG4J日志-->
+        <!--<setting name="logImpl" value="LOG4J "/>-->
+        <!--标志的日志工厂实现-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <!--给全限定名的实体类设置别名，便于编写sql时简化-->
+    <typeAliases>
+        <!--type为对应全限定名的类，alias为别名-->
+        <typeAlias type="cn.app.entity.User" alias="User"/>
+        <!--扫描包默认别名为实体类名对应的小写-->
+        <!--<package name="cn.app.entity"/>-->
+    </typeAliases>
+
+    <!--配置数据库环境，可以有多套，但是每个sqlsessionfactory只能有一个&amp为转义符-->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+
+    <!--实体类和xml文件的映射器，每个实体类都需要注册一个-->
+    <mappers>
+        <!--相对路径注册[推荐使用]-->
+        <mapper resource="cn/app/dao/UserMapper.xml"/>
+        <!--类名注册：接口和xml文件同名且在同一个包下才能这么使用-->
+        <!--<mapper class="cn.app.entity.User"/>-->
+        <!--扫描包：要求和用类注册一样-->
+        <!--<package name="cn.app.dao"/>-->
+    </mappers>
+
+</configuration>

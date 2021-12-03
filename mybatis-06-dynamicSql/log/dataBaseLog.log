@@ -1,0 +1,86 @@
+2021-11-28 17:51:38,696 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ?
+2021-11-28 17:51:38,856 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: %aaaa%(String)
+2021-11-28 17:51:38,926 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 6
+2021-11-28 17:52:42,914 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and id = ?
+2021-11-28 17:52:42,974 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: %aaaa%(String), 1(Integer)
+2021-11-28 17:52:43,034 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 1
+2021-11-28 17:54:06,412 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and tid=? and id = ?
+2021-11-28 17:54:06,472 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: %aaaa%(String), 2(Integer), 1(Integer)
+2021-11-28 17:54:06,542 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 1
+2021-11-28 17:54:27,079 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and tid=? and id = ?
+2021-11-28 17:54:27,139 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: %aaaa%(String), 2(Integer), 1(Integer)
+2021-11-28 17:54:27,199 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 1
+2021-11-28 17:54:55,851 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE tid=? and id = ?
+2021-11-28 17:54:55,921 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: 2(Integer), 1(Integer)
+2021-11-28 17:54:55,971 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 1
+2021-11-28 17:55:13,107 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE tid=?
+2021-11-28 17:55:13,207 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: 2(Integer)
+2021-11-28 17:55:13,267 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 2
+2021-11-28 17:55:40,168 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and tid=?
+2021-11-28 17:55:40,238 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: %aaaa%(String), 2(Integer)
+2021-11-28 17:55:40,278 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 2
+2021-11-28 17:57:57,616 INFO [cn.app.dao.student.StudentMapperTest] - {name=%aaaa%, id=null, tid=2}
+2021-11-28 17:57:58,076 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and tid=?
+2021-11-28 17:57:58,156 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: %aaaa%(String), 2(Integer)
+2021-11-28 17:57:58,196 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 2
+2021-11-28 19:06:38,454 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=2}
+2021-11-28 19:06:38,944 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and tid=? and id = ?
+2021-11-28 19:06:39,034 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: bbbb(String), 2(Integer), 1(Integer)
+2021-11-28 19:06:39,084 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 0
+2021-11-28 19:07:31,394 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=2}
+2021-11-28 19:07:31,854 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and tid=? and id = ?
+2021-11-28 19:07:31,914 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: bbbb(String), 2(Integer), 1(Integer)
+2021-11-28 19:07:31,964 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 0
+2021-11-28 19:07:52,133 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=2}
+2021-11-28 19:07:52,593 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and tid=? and id = ?
+2021-11-28 19:07:52,653 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: bbbb(String), 2(Integer), 1(Integer)
+2021-11-28 19:07:52,713 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 0
+2021-11-28 19:08:05,374 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=2}
+2021-11-28 19:08:05,824 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==>  Preparing: select * from student WHERE `name` like ? and tid=? and id = ?
+2021-11-28 19:08:05,884 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - ==> Parameters: bbbb(String), 2(Integer), 1(Integer)
+2021-11-28 19:08:05,954 DEBUG [cn.app.dao.student.StudentMapper.getStudentByCondition] - <==      Total: 0
+2021-11-28 19:08:39,275 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=2}
+2021-11-28 19:09:35,176 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=2}
+2021-11-28 19:10:40,870 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=2}
+2021-11-28 19:11:14,722 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=2}
+2021-11-28 19:11:15,122 DEBUG [cn.app.dao.student.StudentMapper.updateStudentById] - ==>  Preparing: update student SET `name` = ?, tid = ? where id = ?
+2021-11-28 19:11:15,172 DEBUG [cn.app.dao.student.StudentMapper.updateStudentById] - ==> Parameters: bbbb(String), 2(Integer), 1(Integer)
+2021-11-28 19:11:15,192 DEBUG [cn.app.dao.student.StudentMapper.updateStudentById] - <==    Updates: 1
+2021-11-28 19:11:56,687 INFO [cn.app.dao.student.StudentMapperTest] - {name=bbbb, id=1, tid=null}
+2021-11-28 19:11:57,157 DEBUG [cn.app.dao.student.StudentMapper.updateStudentById] - ==>  Preparing: update student SET `name` = ? where id = ?
+2021-11-28 19:11:57,207 DEBUG [cn.app.dao.student.StudentMapper.updateStudentById] - ==> Parameters: bbbb(String), 1(Integer)
+2021-11-28 19:11:57,207 DEBUG [cn.app.dao.student.StudentMapper.updateStudentById] - <==    Updates: 1
+2021-11-28 19:21:03,159 DEBUG [cn.app.dao.student.StudentMapper.getStudentByIds] - ==>  Preparing: select * from student WHERE id in item=? item=?
+2021-11-28 19:21:03,259 DEBUG [cn.app.dao.student.StudentMapper.getStudentByIds] - ==> Parameters: 1(Integer), 2(Integer)
+2021-11-28 19:22:26,473 DEBUG [cn.app.dao.student.StudentMapper.getStudentByIds] - ==>  Preparing: select * from student WHERE id in ( item=? , item=? )
+2021-11-28 19:22:26,543 DEBUG [cn.app.dao.student.StudentMapper.getStudentByIds] - ==> Parameters: 1(Integer), 2(Integer)
+2021-11-28 19:22:46,337 DEBUG [cn.app.dao.student.StudentMapper.getStudentByIds] - ==>  Preparing: select * from student WHERE id in ( ? , ? )
+2021-11-28 19:22:46,415 DEBUG [cn.app.dao.student.StudentMapper.getStudentByIds] - ==> Parameters: 1(Integer), 2(Integer)
+2021-11-28 19:22:46,464 DEBUG [cn.app.dao.student.StudentMapper.getStudentByIds] - <==      Total: 2
+2021-11-28 19:35:41,863 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE id = ?
+2021-11-28 19:35:41,923 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: 1(Integer)
+2021-11-28 19:35:41,973 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 1
+2021-11-28 19:36:00,374 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE 1=1
+2021-11-28 19:36:00,454 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: 
+2021-11-28 19:36:00,494 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 6
+2021-11-28 19:37:10,275 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE 1=1
+2021-11-28 19:37:10,346 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: 
+2021-11-28 19:37:10,396 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 6
+2021-11-28 19:37:30,534 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE 1=1
+2021-11-28 19:37:30,604 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: 
+2021-11-28 19:37:30,664 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 6
+2021-11-28 19:38:07,293 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE 1=1
+2021-11-28 19:38:07,363 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: 
+2021-11-28 19:38:07,423 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 6
+2021-11-28 19:38:59,462 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE 1=1
+2021-11-28 19:38:59,512 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: 
+2021-11-28 19:38:59,582 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 6
+2021-11-28 19:39:24,793 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE id = ?
+2021-11-28 19:39:24,873 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: 1(Integer)
+2021-11-28 19:39:24,923 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 1
+2021-11-28 19:41:06,318 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE id = ?
+2021-11-28 19:41:06,398 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: 1(Integer)
+2021-11-28 19:41:06,438 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 1
+2021-11-28 19:41:20,909 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==>  Preparing: select * from student WHERE `name` like ?
+2021-11-28 19:41:21,029 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - ==> Parameters: %aa%(String)
+2021-11-28 19:41:21,119 DEBUG [cn.app.dao.student.StudentMapper.getStudentByChooseWhen] - <==      Total: 5
